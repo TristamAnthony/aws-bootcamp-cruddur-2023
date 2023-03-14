@@ -8,10 +8,10 @@ tasks:
       unzip awscliv2.zip
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
-  - name: BFG Repo Cleaner
-    command: brew install bfg
-  - name: Truffle Hog
-    command: brew install trufflesecurity/trufflehog/trufflehog
+#  - name: BFG Repo Cleaner
+#    command: brew install bfg
+#  - name: Truffle Hog
+#    command: brew install trufflesecurity/trufflehog/trufflehog
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
