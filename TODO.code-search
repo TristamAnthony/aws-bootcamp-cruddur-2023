@@ -1,0 +1,117 @@
+# Query: TODO
+# ContextLines: 3
+
+13 results - 9 files
+
+frontend-react-js/src/components/ProfileInfo.js:
+  2  import {ReactComponent as ElipsesIcon} from './svg/elipses.svg';
+  3  import React from "react";
+  4  
+  5: // [TODO] Authenication
+  6  import { Auth } from 'aws-amplify';
+  7  
+  8  export default function ProfileInfo(props) {
+
+frontend-react-js/src/pages/ConfirmationPage.js:
+  3  import { useParams } from 'react-router-dom';
+  4  import {ReactComponent as Logo} from '../components/svg/logo.svg';
+  5  
+  6: // [TODO] Authenication
+  7  import { Auth } from 'aws-amplify';
+  8  
+  9  export default function ConfirmationPage() {
+
+frontend-react-js/src/pages/HomeFeedPage.js:
+   9  import ActivityForm from '../components/ActivityForm';
+  10  import ReplyForm from '../components/ReplyForm';
+  11  
+  12: // [TODO] Authenication
+  13  import Cookies from 'js-cookie'
+  14  
+  15  export default function HomeFeedPage() {
+
+frontend-react-js/src/pages/MessageGroupPage.js:
+   7  import MessagesFeed from '../components/MessageFeed';
+   8  import MessagesForm from '../components/MessageForm';
+   9  
+  10: // [TODO] Authenication
+  11  import Cookies from 'js-cookie'
+  12  
+  13  export default function MessageGroupPage() {
+
+  55  
+  56    const checkAuth = async () => {
+  57      console.log('checkAuth')
+  58:     // [TODO] Authenication
+  59      if (Cookies.get('user.logged_in')) {
+  60        setUser({
+  61          display_name: Cookies.get('user.name'),
+
+frontend-react-js/src/pages/MessageGroupsPage.js:
+   4  import DesktopNavigation  from '../components/DesktopNavigation';
+   5  import MessageGroupFeed from '../components/MessageGroupFeed';
+   6  
+   7: // [TODO] Authenication
+   8  import Cookies from 'js-cookie'
+   9  
+  10  export default function MessageGroupsPage() {
+
+  32  
+  33    const checkAuth = async () => {
+  34      console.log('checkAuth')
+  35:     // [TODO] Authenication
+  36      if (Cookies.get('user.logged_in')) {
+  37        setUser({
+  38          display_name: Cookies.get('user.name'),
+
+frontend-react-js/src/pages/NotificationsFeedPage.js:
+   7  import ActivityForm from '../components/ActivityForm';
+   8  import ReplyForm from '../components/ReplyForm';
+   9  
+  10: // [TODO] Authenication
+  11  import Cookies from 'js-cookie'
+  12  
+  13  export default function NotificationsFeedPage() {
+
+  37  
+  38    const checkAuth = async () => {
+  39      console.log('checkAuth')
+  40:     // [TODO] Authenication
+  41      if (Cookies.get('user.logged_in')) {
+  42        setUser({
+  43          display_name: Cookies.get('user.name'),
+
+frontend-react-js/src/pages/SigninPage.js:
+  3  import {ReactComponent as Logo} from '../components/svg/logo.svg';
+  4  import { Link } from "react-router-dom";
+  5  
+  6: // [TODO] Authenication
+  7  import { Auth } from 'aws-amplify';
+  8  
+  9  export default function SigninPage() {
+
+frontend-react-js/src/pages/SignupPage.js:
+  3  import {ReactComponent as Logo} from '../components/svg/logo.svg';
+  4  import { Link } from "react-router-dom";
+  5  
+  6: // [TODO] Authenication
+  7  import { Auth } from 'aws-amplify';
+  8  
+  9  export default function SignupPage() {
+
+frontend-react-js/src/pages/UserFeedPage.js:
+   7  import ActivityFeed from '../components/ActivityFeed';
+   8  import ActivityForm from '../components/ActivityForm';
+   9  
+  10: // [TODO] Authenication
+  11  import Cookies from 'js-cookie'
+  12  
+  13  export default function UserFeedPage() {
+
+  38  
+  39    const checkAuth = async () => {
+  40      console.log('checkAuth')
+  41:     // [TODO] Authenication
+  42      if (Cookies.get('user.logged_in')) {
+  43        setUser({
+  44          display_name: Cookies.get('user.name'),
